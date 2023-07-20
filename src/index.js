@@ -12,8 +12,6 @@ module.exports = function check(str, bracketsConfig) {
       for (let bracet of brackets) {
         new_str = new_str.replaceAll(bracet, '');
       }
-    } else {
-      break;
     }
   }
 
