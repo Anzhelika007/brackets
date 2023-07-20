@@ -1,7 +1,7 @@
 module.exports = function check(str, bracketsConfig) {
   const count = Math.round(str.length / 2);
-  const brackets = []
-  let new_str = str
+  const brackets = [];
+  let new_str = str;
 
   for (let elem of bracketsConfig) {
     brackets.push(elem.join(''));
@@ -16,9 +16,9 @@ module.exports = function check(str, bracketsConfig) {
   }
 
   if (new_str.length === 0) {
-    return true
+    return true;
   } else {
-    return false
+    return false;
   }
 }
 
